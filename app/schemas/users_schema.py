@@ -9,7 +9,7 @@ class UserCreate(BaseModel):
     password: Optional[str] = None
     is_active: Optional[bool] = True
 
-class UserCreateSuccess(BaseModel):
+class UserResponse(BaseModel):
     id: int
     name: str
     mobile: Optional[str] = None
